@@ -20,7 +20,7 @@
   <span>¿En que puc ajudar?</span>
 </mat-toolbar>
 
-<div class="form-container" >
+<div class="form-container" *ngIf="!isSubmitted; else confirmationScreen">
   <form [formGroup]="formVoluntariosLimpieza" (ngSubmit)="onSubmit()">
   <div class="form-group">
     <mat-form-field>
