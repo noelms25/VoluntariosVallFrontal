@@ -41,7 +41,7 @@ try{
   this.restService.saveVoluntarioLimpieza(voluntario).subscribe(data => 
     console.log(data)
   );
-    this.restService.get();
+    //this.restService.get();
 }
 catch(Ex){
  console.log(Ex)
