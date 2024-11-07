@@ -11,6 +11,8 @@ import { RestService } from './../rest.service';
 })
 export class VoluntariosNetejaComponent implements OnInit{
 
+  isSubmitted = false;
+
   constructor(private router:Router, private formBuilder:FormBuilder, private restService:RestService
 
   ){
@@ -28,6 +30,11 @@ export class VoluntariosNetejaComponent implements OnInit{
 
   limpiar(){
     this.router.navigate(['/', 'voluntariosLimpieza']);
+  }
+
+  onSubmit() {
+    this.isSubmitted = true;
+    this.aceptar();
   }
 
   aceptar(){
