@@ -1,29 +1,19 @@
-.main{
-    display: felx;
-    flex-direction: column;
+/* Contenedor principal */
+.form-container {
+    max-width: 600px;
     margin: 0 auto;
-    max-width: 70%;
-    padding-top: 5%;
-    overflow: hidden;
-    border-radius: 9px;
-    border: 1px solid #cccfd2;
-    margin-top: 20px;
-}
-
-.rowBuscador{
-    grid-column-gap: 3%;
+    padding: 20px;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-}
-
-.colum1{
-    grid-column: 1/5;
-    width: 100%;
-    padding-left: 15%;
-}
-
-.colum2{
-    grid-column: 7/10;
-    width: 100%;
-    padding-left: 15%;
-}
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #ffffff;
+  }
+  
+  /* Estilos para los grupos de formulario */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
